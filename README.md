@@ -1,7 +1,7 @@
 # BADS7105
 CUSTOMER RELATIONSHIP MANAGEMENT ANALYTICS AND INTELLIGENCE
 
-- [ ] [Homework 01 - Analysis of Customer Behaviors](./Homework%2001%20-%20Analysis%20of%20customer%20behaviors)  
+- [ ] [Homework 01 - Analysis of Customer Behaviors](./HW%2001)  
 
 - [ ] [Homework 02 - Jobs to be done](./Homework%2002%20-%20Jobs%20to%20be%20done)  
 
