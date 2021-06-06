@@ -1,6 +1,7 @@
 # Value Proposition
 
-Based on a day in life data from BADS7105 students, activity for each person always changes along the day. Visualization below summarizes BADS7105 students activities as well as gain and pain points.
+Based on a day in life of my data there is one strong pain, i think it should be solved.
+![img1](https://raw.githubusercontent.com/PawarutK/BADS7105/main/HW%2003/RawData.jpg)
+here's what I have in mind.
+![img2](https://raw.githubusercontent.com/PawarutK/BADS7105/main/HW%2003/VP.PNG)
 
-The data was summary and label by ntc-namwong manually, this visualization take cleaned data from him.
-you can access the original data from this link [ntc-namwong](https://github.com/ntc-namwong/BADS7105/tree/main/Homework%2003) 
