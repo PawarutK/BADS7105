@@ -1,9 +1,9 @@
 # Customer Journey
 
-This is an example of customer journey for buying electric piano.
+Me buying fridge
 
 ## Customer Journey Map
-![](https://github.com/PawarutK/BADS7105/blob/2784f2f65251481487feedbd53920c1d3ef27323/HW%2004/CJ%2001.pdf)
+![](https://github.com/PawarutK/BADS7105/blob/e0933facdff7787e0c30f6c7b04c5f7c258c688d/HW%2004/CJ01.png)
 
 ## Customer Journey Map with Data Analytics
-![](https://github.com/PawarutK/BADS7105/blob/a864cb0e92f5ecb99656f19cc10b75471b3d2ca8/HW%2004/CJ%2002.pdf)
+![](https://github.com/PawarutK/BADS7105/blob/e0933facdff7787e0c30f6c7b04c5f7c258c688d/HW%2004/CJ02.png)
