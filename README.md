@@ -24,3 +24,5 @@ TABLE OF CONTENTS
 - [ ] [Homework 10 - Customer Movement Analysis](./HW%2010)  
 
 - [ ] [Homework 11 - Voice of Customers](./HW%2011)  
+
+- [ ] [Homework 12 - Design Thinking](./HW%2012)  
