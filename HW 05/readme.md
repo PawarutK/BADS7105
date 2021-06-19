@@ -26,11 +26,6 @@ CLV = T x AOV x AGM x ALT
   - Even DEP00076 do great job to increase the sales, but other departments are still below the target line.
   - Premium customers trend to decrease buying product from the supermarket.
 
-***Picture 5-1 CLV Dashboard***
-![Picture 5-1]()
+***CLV Dashboard***
+![Dashboard]()
 
-***Picture 5-2 CLV Dashboard Filtered by Active User***
-![Picture 5-2]()
-
-***Picture 5-3 CLV Dashboard Filtered by Premium User***
-![Picture 5-3]()
