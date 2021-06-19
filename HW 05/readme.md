@@ -27,5 +27,5 @@ CLV = T x AOV x AGM x ALT
   - Premium customers trend to decrease buying product from the supermarket.
 
 ***CLV Dashboard***
-![Dashboard](./DB.png)
+![Dashboard](./DB00.png)
 
