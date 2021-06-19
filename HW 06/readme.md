@@ -75,7 +75,7 @@ Regarding all features queried from Google BigQuery, some features are self corr
 
 To select how many cluster should be used for the supermarket dataset, Elbow method and Silhouette is applied. From the pictures below, 3-cluster (K=3) is selected because the more number of clusters, the less Silhouette.
 
-![]()
+![](./01.png)
 
 ## Clustering Analysis
 
@@ -83,7 +83,7 @@ This step is to analyze which feature is importance and how each cluster behaves
 
 ### Feature Importance
 
-![]()
+![](./02.png)
 
 It is found that top 5 the most importance features are
 - CUST_LIFETIME
@@ -94,7 +94,7 @@ It is found that top 5 the most importance features are
 
 ### Exploratory Data Analysis
 
-![]()
+![](./03.png)
 
 ## Interpretation
 
