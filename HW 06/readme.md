@@ -57,7 +57,7 @@ ORDER BY
 ```
 
 ## RFM Theory
-from RFM theory about customer, RECENCY feature was added manually before custering
+from RFM theory about customer, RECENCY feature was added manually before custering by combine 2 features below.
 
 RECENCY = (DURATION_FROM_FIRST_PURCHASE - DURATION_FROM_LAST_PURCHASE) / DURATION_FROM_FIRST_PURCHASE
 
