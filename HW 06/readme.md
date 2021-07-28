@@ -56,63 +56,32 @@ ORDER BY
     S.CUST_CODE
 ```
 
-## Feature Extraction
+## RFM Theory
+from RFM theory about customer, RECENCY feature was added before custering
 
-Regarding all features queried from Google BigQuery, some features are self correlated. This is trial and error step to see which parameters are neccessary and meaningful for K-Mean clustering model in next step. Here, 7 features are selected as detailed below.
+RECENCY = (DURATION_FROM_FIRST_PURCHASE - DURATION_FROM_LAST_PURCHASE) / DURATION_FROM_FIRST_PURCHASE
 
-- ~~TOTAL_SPEND~~
-- AVG_MONTHLY_SPEND
-- STD_MONTLY_SPEND
-- ~~TOTAL_VISIT~~
-- AVG_MONTHLY_VISIT
-- STD_MONTLY_VISIT
-- MODE_BASKET_SIZE
-- ~~DURATION_FROM_FIRST_PURCHASE~~
-- DURATION_FROM_LAST_PURCHASE
-- CUST_LIFETIME
+ther nearly 1 is the most recently customer, the longest can refer to churn chustomer.
+
+![](./00.png)
+
 
 ## Clustering Model
 
-To select how many cluster should be used for the supermarket dataset, Elbow method and Silhouette is applied. From the pictures below, 3-cluster (K=3) is selected because the more number of clusters, the less Silhouette.
+To select how many cluster should be used for the supermarket dataset, Elbow method and Silhouette is applied. From the pictures below, 10-cluster (K=10) is selected because the more number of clusters, the less Silhouette.
 
 ![](./01.png)
 
 ## Clustering Analysis
 
-This step is to analyze which feature is importance and how each cluster behaves.
-
-### Feature Importance
-
-![](./02.png)
-
-It is found that top 5 the most importance features are
-- CUST_LIFETIME
-- DURATION_FROM_LAST_PURCHASE
-- STD_MONTHLY_SPEND
-- STD_MONTHLY_VISIT
-- AVG_MONTHLY_VISIT
-
-### Exploratory Data Analysis
+After Clustering Completed, it was shown in 3D graphical (AVG_MONTHLY_SPEND, AVG_MONTHLY_VISIT, RECENCY) with 10 colors.
 
 ![](./03.png)
 
-## Interpretation
+### Exploratory Data Analysis
 
-From the density plots, it can be concluded as below.
-- **CHURNED**
-  - One time purchase
-  - Not active for over 1 year
-- **ACTIVE**
-  - Still active within 3 months
-  - Visit not frequently (< 4 times/month)
-  - Spend less money per visit (< 300 USD/time)
-- **PREMIUM**
-  - Still active within 3 months
-  - Visit frequently (>= 4 times/month)
-  - Spend much money per visit (>= 300 USD/time)
+![](./02.png)
 
-| GROUP | COUNT | TOTAL_SPEND | AVG_MONTHLY_SPEND | STD_MONTHLY_SPEND | TOTAL_VISIT | AVG_MONTHLY_VISIT | STD_MONTHLY_VISIT | MODE_BASKET_SIZE | DURATION_FROM_FIRST_PURCAHSE | DURATION_FROM_LAST_PURCHASE | CUST_LIFETIME | NAME |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|1|3136|23.6 USD/MONTH <br />|8.2 USD/MONTH|0.9 USD/MONTH|2 TIMES/MONTH|1 TIMES/MONTH|0 TIMES/MONTH|SMALL-MEDIUM|479.4 DAYS|421.7 DAYS|57.7 DAYS|CHURNED|
-|2|2480|3,215.3 USD/MONTH|18.0 USD/MONTH|11.4 USD/MONTH|18 TIMES/MONTH|2 TIMES/MONTH|0 TIMES/MONTH|MEDIUM-LARGE|658.1 DAYS|62.5 DAYS|595.6 DAYS|ACTIVE|
-|3|484|52,218.7 USD/MONTH|86.6 USD/MONTH|44.7 USD/MONTH|147 TIMES/MONTH|6 TIMES/MONTH|3 TIMES/MONTH|MEDIUM-LARGE|751.8 DAYS|10.9 DAYS|740.9 DAYS|PREMIUM|
+## Interpretation and Possible Action
+
+![](./04.png)
