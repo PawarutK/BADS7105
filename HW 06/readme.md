@@ -57,11 +57,11 @@ ORDER BY
 ```
 
 ## RFM Theory
-from RFM theory about customer, RECENCY feature was added before custering
+from RFM theory about customer, RECENCY feature was added manually before custering
 
 RECENCY = (DURATION_FROM_FIRST_PURCHASE - DURATION_FROM_LAST_PURCHASE) / DURATION_FROM_FIRST_PURCHASE
 
-ther nearly 1 is the most recently customer, the longest can refer to churn chustomer.
+the most nearly 1 is the most recently visit customer, the nearly 0 will refer to churn chustomer.
 
 ![](./00.png)
 
